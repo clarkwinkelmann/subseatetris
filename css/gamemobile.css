@@ -1,0 +1,81 @@
+#message{
+	font-size: 32px;
+}
+
+#sidebar1, #sidebar2{
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	width: 80%;
+	height: 70px;
+	background: none;
+	border-radius: 0;
+	box-shadow: none;
+}
+
+#sidebar2{
+	position: absolute;
+	top: 0;
+	left: 60%;
+}
+
+#topbar{
+	position: absolute;
+	top: 5px;
+	left: 0;
+	width: 100%;
+	height: 70px;
+	overflow: hidden;
+}
+
+#pause{
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	width: 35px;
+	height: 35px;
+	margin: 16px 5px;
+	background: rgba(200,200,200,0.5);
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	color: #FFF;
+	font-size: 32px;
+	text-align: center;
+	text-shadow: 0 0 3px rgba(0,0,0,0.3);
+	border-radius: 3px;
+	z-index: 2000;
+}
+
+#pause div{
+	font-size: 0.8em;
+}
+
+#pscore, #plevel{
+	position: static;
+}
+
+#nexttetrimino-0{
+	top: -25px;
+	left: 20px;
+}
+
+#nexttetrimino-1{
+	top: -25px;
+	left: 90px;
+}
+
+#nexttetrimino-2{
+	display: none;
+}
+
+#nextzone{
+	top: 3px;
+	left: 0;
+	width: 62px;
+	height: 62px;
+}
+
+#pscore, #plines{
+	position: static;
+	margin: 7px 10px;
+}
