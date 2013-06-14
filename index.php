@@ -5,13 +5,18 @@
 <script type="text/javascript" >
 	var T_Pause = "<?php echo $T_Pause; ?>";
 	var T_Level = "<?php echo $T_Level; ?>";
-	var T_EndOfGame = "<?php echo $T_EndOfGame; ?>";
+	var T_GameOver = "<?php echo $T_GameOver; ?>";
 	var T_Ghost = "<?php echo $T_Ghost; ?>";
 	var T_AquaTetris = "<?php echo $T_AquaTetris; ?>";
 	var Mois = <?php echo $T_Months; ?>;
 	var T_NoScore = "<?php echo $T_NoScore; ?>";
+	var T_Player = "<?php echo $T_Player; ?>";
 	var T_Score = "<?php echo $T_Score; ?>";
 	var T_Date = "<?php echo $T_Date; ?>";
+	var T_ChangeName = "<?php echo $T_ChangeName; ?>";
+	var T_ChangeNameBulle = "<?php echo $T_ChangeNameBulle; ?>";
+	var T_OK = "<?php echo $T_OK; ?>";
+	var T_Me = "<?php echo $T_Me; ?>";
 </script>
 	<div id="game">
 		<div id="gamezone">

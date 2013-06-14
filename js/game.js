@@ -3,7 +3,7 @@
 	Clark Winkelmann
 	clark.winkelmann@gmail.com
 	http://sourceforge.net/p/subseatetris
-	Version 4.0.2
+	Version 4.1
 */
 
 /* ################################################################################
@@ -111,6 +111,7 @@ var InMoveX=false; // True si le dernier mouvement est un déplacement latéral
 var StartPower=NONE; // Power à démarrer à la prochaine frame
 var LastNbreLignes=0; // Dernière combo de lignes (Permet de repérer les doubles-tetris)
 var DeleteTetriStonesTypeNextFrame=NONE; // Contient le type de tetristones à supprimer du jeu à la prochaine frame
+var InstantDown=false; // Fait descendre instantanément le tetrmino à la prochaine frame
 
 // Contrôles claviers et touch
 var LEFT_PRESSED=false;
@@ -293,6 +294,9 @@ document.onkeydown = function(e) {
 		case 40: // DOWN
 			DOWN_PRESSED = true;
 			return false; // Empêche le scroll au clavier dans Firefox
+			break;
+		case 32: // SPACE
+			InstantDown = true;
 			break;
 		case 27: // ESC
 			setPause();
@@ -825,24 +829,23 @@ function startPartie(){
 */
 function finPartie(){
 	PartieFinie = true;
-	sendMessage(T_EndOfGame,false);
+	sendMessage(T_GameOver,false);
 	document.getElementById('home-start').style.display = 'none';
 	document.getElementById('home-end').style.display = 'block';
 	document.getElementById('scorefinal').innerHTML = Score;
 	document.getElementById('linesfinal').innerHTML = Lignes;
 	document.getElementById('levelfinal').innerHTML = Niveau;
 	
-	var HighScores = getScores();
-	var MonScore = new HighScore(Score,new Date());
-	//alert(MonScore.DateScore);
+	HighScores = getScores();
+	MonScore = new HighScore(Score,new Date(),PlayerName);
 	
 	if(Score > HighScores[9].Points){
 		HighScores.push(MonScore);
-		setScores(HighScores);
+		setScores();
 		HighScores = getScores();
 	}
 	
-	buildTableauHighScores(HighScores,MonScore);
+	buildTableauHighScores();
 	
 	setTimeout(function(){ afficheMenu(); },3000);
 }
@@ -1081,6 +1084,17 @@ function Game(){
 					Tetris = Tetris.concat(TetrisFloat);
 					TetrisFloat = new Array();
 					TetriSpawn = true;
+				}
+			}
+			// Chute instantanée
+			if(InstantDown){
+				InstantDown = false;
+				while(isTetriminoFree(moveTetriminos(0,Gravity,TetrisFall))){
+					TetrisFall = moveTetriminos(0,Gravity,TetrisFall);
+					TetriFallDontMove = false;
+					Score += Niveau;
+					InMoveX = false;
+					InRotation = false;
 				}
 			}
 			// Chute

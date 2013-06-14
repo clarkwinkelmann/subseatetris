@@ -4,9 +4,14 @@
 ?>
 <script type="text/javascript" >
 	var T_NoScore = "<?php echo $T_NoScore; ?>";
+	var T_Player = "<?php echo $T_Player; ?>";
 	var T_Score = "<?php echo $T_Score; ?>";
 	var T_Date = "<?php echo $T_Date; ?>";
 	var Mois = <?php echo $T_Months; ?>;
+	var T_ChangeName = "<?php echo $T_ChangeName; ?>";
+	var T_ChangeNameBulle = "<?php echo $T_ChangeNameBulle; ?>";
+	var T_OK = "<?php echo $T_OK; ?>";
+	var T_Me = "<?php echo $T_Me; ?>";
 </script>
 	<div id="content">
 <?php include("menu.php"); ?>

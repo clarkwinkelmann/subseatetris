@@ -10,7 +10,7 @@
 	
 	// Pages
 	$T_Text_Home_Start = "<p>Prêt pour un Tetris hors normes ?</p><p>Découvrez le Tetris sous-marin avec de nombreux effets spéciaux !</p>";
-	$T_Text_Home_End = "<p class=\"center\">Fin de la partie !</p>";
+	$T_Text_Home_End = "<p class=\"center\">Fin de la partie !</p><p><small>Vous pouvez changer votre nom de joueur en cliquant sur sa ligne dans le tableau --></small></p>";
 	$T_Text_HowToPlay = "<p>Votre objectif est de compléter un maximum de lignes avant que la grille ne soit remplie jusqu'en haut.</p>
 	<p>Toutes les 10 lignes complétées, vous passez au niveau supérieur et la vitesse augmente. Tous les 2 niveaux, la zone de jeu s'agrandit.</p>
 	<p>À chaque changement de niveau, il y a un risque d'inondation ! À ce moment, les pièces vont flotter et arriveront par le bas.</p>
@@ -25,6 +25,7 @@
 	$T_HowToPlay_LeftRight = "Déplacer la pièce latéralement";
 	$T_HowToPlay_Up = "Faire tourner la pièce";
 	$T_HowToPlay_Down = "Accélérer la chute";
+	$T_HowToPlay_Space = "Chute instantanée";
 	
 	$T_TouchCommands = "Commandes tactiles";
 	$T_Touch_Pause = "Mettre le jeu en pause";
@@ -33,11 +34,16 @@
 	$T_Touch_SwipeDown = "Glisser pour déplacer latéralement";
 	
 	$T_Months = "['Janvier','Février','Mars','Avril','Mai','Juin','Juillet','Aout','Septembre','Octobre','Novembre','Décembre']";
-	$T_NoScore = "Aucun score";
 	$T_HighScores = "Meilleurs scores<span>locaux</span>";
+	$T_NoScore = "Aucun score";
+	$T_Player = "Joueur";
 	$T_Date = "Date";
 	$T_ClearScores = "Effacer les scores";
 	$T_ScoresConfirm = "Effacer les scores ? <a onclick=\"scoresConfirm()\" title=\"OK\">OK</a> | <a onclick=\"scoresCancel()\" title=\"Annuler\">Annuler</a>";
+	$T_ChangeName = 'Changer le nom du joueur';
+	$T_ChangeNameBulle = 'Choisissez<br/>un nom';
+	$T_OK = 'Valider';
+	$T_Me = 'Moi';
 	
 	//Jeu
 	$T_Score = "Score";
@@ -47,7 +53,7 @@
 	$T_Play = "Jouer";
 	$T_RePlay = "Rejouer";
 	$T_NewGame = "Nouvelle partie";
-	$T_EndOfGame = "Fin de la partie !";
+	$T_GameOver = "Game over !";
 	$T_Ghost = "Pièce fantôme !";
 	$T_AquaTetris = "Inondation !";
 ?>

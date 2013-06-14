@@ -10,7 +10,7 @@
 	
 	// Pages
 	$T_Text_Home_Start = "<p>Bereit für ein außergewöhnliches Tetris ?</p><p>Entdeckt das Unterwaßertetris mit vielen Spezialeffekten !</p>";
-	$T_Text_Home_End = "<p class=\"center\">Ende des Spiels !</p>";
+	$T_Text_Home_End = "<p class=\"center\">Ende des Spiels !</p><p><small>Clicken Sie auf Ihren Splielernamen in der Tabelle, um es zu ändern --></small></p>";
 	$T_Text_HowToPlay = "<p>Ihr Ziel ist es, ein Maximum an Leitungen abgeschlossen sein, bevor das Netz bis zum Rand gefüllt ist.</p>
 	<p>Alle 10 Zeilen abgeschlossen, bewegen Sie sich auf die nächste Ebene und Geschwindigkeit erhöht. Alle 2 Stockwerken, wird das Spielfeld vergrößert.
 	Jeder Ebene ändern, besteht die Gefahr von Überschwemmungen! Damals die Stücke schweben und wird an der Unterseite zu gelangen.</p>
@@ -25,6 +25,7 @@
 	$T_HowToPlay_LeftRight = "Das Stück seitlich bewegen";
 	$T_HowToPlay_Up = "Das Stück drehen";
 	$T_HowToPlay_Down = "Beschleunigen den Fall";
+	$T_HowToPlay_Space = "momentane Fall";
 	
 	$T_TouchCommands = "Touch-Steuerung";
 	$T_Touch_Pause = "Hier ist die Pause-Taste";
@@ -33,11 +34,16 @@
 	$T_Touch_SwipeDown = "Swipe für seitlich bewegen";
 	
 	$T_Months = "['Januar','Februar','März','April','Mai','Juni','Juli','August','September','Oktober','November','Dezember']";
-	$T_NoScore = "Kein score";
 	$T_HighScores = "HighScores<span>lokal</span>";
+	$T_NoScore = "Kein score";
+	$T_Player = "Spieler";
 	$T_Date = "Date";
 	$T_ClearScores = "Scores löschen";
 	$T_ScoresConfirm = "Scores löschen ? <a onclick=\"scoresConfirm()\" title=\"OK\">OK</a> | <a onclick=\"scoresCancel()\" title=\"Abbrechen\">Abbrechen</a>";
+	$T_ChangeName = 'Namen des Spielers ändern';
+	$T_ChangeNameBulle = 'Wählen Sie einen Namen';
+	$T_OK = 'OK';
+	$T_Me = 'Me';
 	
 	//Jeu
 	$T_Score = "Score";
@@ -47,7 +53,7 @@
 	$T_Play = "Spielen";
 	$T_RePlay = "Wieder spielen";
 	$T_NewGame = "Neues Spiel";
-	$T_EndOfGame = "Ende des Spiels !";
+	$T_GameOver = "Game over !";
 	$T_Ghost = "Phantom-Stück !";
 	$T_AquaTetris = "Hochwasser !";
 ?>

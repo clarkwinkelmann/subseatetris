@@ -17,6 +17,7 @@
 				<tr><td><span class="key" id="up">&#9650;</span></td><td><?php echo $T_HowToPlay_Up; ?></td></tr>
 				<tr><td><span class="key" id="left">&#9664;</span><span class="key" id="right">&#9654;</span></td><td><?php echo $T_HowToPlay_LeftRight; ?></td></tr>
 				<tr><td><span class="key" id="down">&#9660;</span></td><td><?php echo $T_HowToPlay_Down; ?></td></tr>
+				<tr><td><span class="key" id="space">SPACE</span></td><td><?php echo $T_HowToPlay_Space; ?></td></tr>
 			</table>
 			<div class="onmobile">
 				<p><?php echo $T_OnMobile; ?></p>
@@ -65,6 +66,9 @@ document.onkeydown = function(e) {
 		case 40: // DOWN
 			ActivateKey('down');
 			break;
+		case 32: // SPACE
+			ActivateKey('space');
+			break;
 	}
 }
 
@@ -90,6 +94,9 @@ document.onkeyup = function(e) {
 			break;
 		case 40: // DOWN
 			DesactivateKey('down');
+			break;
+		case 32: // SPACE
+			DesactivateKey('space');
 			break;
 	}
 }
