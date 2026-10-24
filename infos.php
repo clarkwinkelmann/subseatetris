@@ -9,7 +9,7 @@
 			<p class="center">Version 4.1</p>
 			<p class="center">&copy; Clark Winkelmann 2013</p>
 			<p onclick="document.getElementById('changelog').style.display = 'block';" class="smallbutton desktop-only">Changelog</p>
-			<a href="https://sourceforge.net/p/subseatetris/" target="blank" class="smallbutton desktop-only">Source code</a>
+			<a href="https://github.com/clarkwinkelmann/subseatetris" target="blank" class="smallbutton desktop-only">Source code</a>
 		</div>
 		<div class="corner"></div>
 		<div class="bottom"></div>
