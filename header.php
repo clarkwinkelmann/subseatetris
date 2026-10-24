@@ -54,7 +54,7 @@
 	<noscript>
 		<div id="nojs"><?php echo $T_NoJS; ?></div>
 	</noscript>
-	<a href="http://projects.bugnplay.ch/bugnplay/library/project.php?project=2013038" target="blank" title="<?php echo $T_BugnPlay; ?>" class="signet"><?php echo $T_BugnPlay; ?><img src="./img/logo_bugnplay.png" alt="BugnPlay"/></a>
+	<span title="<?php echo $T_BugnPlay; ?>" class="signet"><?php echo $T_BugnPlay; ?><img src="./img/logo_bugnplay.png" alt="BugnPlay"/></span>
 	<div id="desktop"></div>
 	<div id="ground">
 		<div id="plantes"></div>

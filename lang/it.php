@@ -4,7 +4,7 @@
 	$T_Stats = "Stats";
 	$T_HowToPlay = "Come si gioca";
 	$T_MoreInfos = "Più infos";
-	$T_BugnPlay = "Vista su BugnPlay";
+	$T_BugnPlay = "Presentato a";
 	$T_NoJS = "<p>È necessario abilitare javascript nel browser per essere in grado di giocare SubSea Tetris !</p>
 	<p>Tu non sai come? <a href=\"http://www.enable-javascript.com/it/\" target=\"_blank\">Seguire queste istruzioni</a> quindi aggiornare la pagina.</p>";
 	
